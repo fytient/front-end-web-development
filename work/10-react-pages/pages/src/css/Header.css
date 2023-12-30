@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EBCBFE  ;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header__logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .header__title {
+    display: flex;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

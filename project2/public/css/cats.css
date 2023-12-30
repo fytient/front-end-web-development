@@ -1,0 +1,137 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  padding: 16px;
+  grid-column-span: 12;
+}
+
+.card {
+  grid-column-span: 12;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 16px;
+  background-color: #eee;
+
+}
+
+.card-pic {
+  width: 200px;
+  height: auto;
+}
+
+.card-text {
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.card-btn {
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+
+  text-decoration: underline;
+
+  color: blue;
+  background-color: inherit;
+}
+
+.subscribe {
+  margin: auto;
+  padding: 16px;
+  /*   width: 70vw; */
+  max-width: 480px;
+  border: 2px solid black;
+}
+
+.subscribe::backdrop {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.subscribe-title {
+  margin: 16px 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1rem;
+}
+
+.form__label {
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.form__label:hover {
+  cursor: pointer;
+}
+
+.form__label-required {
+  font-style: italic;
+
+  color: red;
+}
+
+.form__input--invalid {
+  border: 1.2px dashed red;
+}
+
+.form__input:focus,
+.form__input:focus-visible {
+  border: 1px solid blue;
+}
+
+.form__error-message {
+  margin: 4px 0;
+
+  display: block;
+
+  font-style: italic;
+
+  color: red;
+}
+
+.form__button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  margin-top: 32px;
+}
+
+.form__button {
+  padding: 8px 8px;
+
+  cursor: pointer;
+
+  border-radius: 12px;
+
+  font-size: 1.2rem;
+}
+
+.form__button--subscribe {
+  background-color: lime;
+}
+
+.form__button--cancel {
+  background-color: #f28080;
+}
+
+@media screen and (min-width: 44rem) {
+  .card {
+    grid-column: span 4;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin: 0.25rem;
+  }
+}

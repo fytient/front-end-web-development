@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Internet Cats</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/cats.css" />
+    <script defer src="js/cats.js"></script>
+  </head>
+  <body>
+    <a href="main" class="skip-link">Skip to content</a>
+    <header class="header">
+      <a href="/" class="header-link">
+        <img
+          src="http://placekitten.com/100/100?image=1"
+          alt="this is a cat logo"
+          class="header-logo"
+        />
+      </a>
+      <h1 class="header-title">Famous Internet Cats</h1>
+        <nav class="menubar">
+          <button class="button-menu" aria-label="nav-menu"></button>
+          <i class="gg-menu"></i>
+          </button>
+      
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link" tabindex="-1">Home</a></li>
+            <li class="nav-item"><a href="cats.html" class="nav-link" tabindex="-1">Famous Cats</a></li>
+            <li class="nav-item"><a href="catevents.html" class="nav-link" tabindex="-1">Cat events</a></li>
+           </ul>
+        </nav>
+      </header>
+   <main class="main" id="main">
+     <dialog class="subscribe">
+        <h2 class="subscribe-title">Subscribe to the Latest Mews!</h2>
+        <form action="/subscribe" method="post" class="subscribe-form form">
+          <label for="form__email" class="form__label">
+            Email:
+            <span aria-label="required" class="form__label-required">
+              * required</span
+            >
+          </label>
+          <input
+            type="text"
+            id="form__email"
+            name="email"
+            class="form__input"
+          />
+          <span class="form__error-message form__error-email"> </span>
+          <label for="form__confirm-email" class="form__label">
+            Confirm Email:
+            <span aria-label="required" class="form__label-required">
+              * required</span
+            >
+          </label>
+          <input
+            type="text"
+            id="form__confirm-email"
+            name="confirm-email"
+            class="form__input"
+          />
+          <span class="form__error-message form__error-confirm-email"></span>
+          <div class="form__button-container">
+            <button type="submit" class="form__button form__button--subscribe">
+              Subscribe
+            </button>
+            <button class="form__button form__button--cancel" type="button">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </dialog>
+     <div class="cards">
+     <div class="card">
+          <h2 class="card-title">Jorts</h2>
+          <img class="card-pic" src="http://placekitten.com/200/200?image=3" alt="cat in the snow">
+          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum ex, et volutpat erat. <button class="card-btn">Subscribe</button>Donec vel consequat arcu.</div>
+        </div>
+     <div class="card">
+          <h2 class="card-title">Jean</h2>
+          <img class="card-pic" src="http://placekitten.com/200/200?image=4" alt="cat by the door">        
+          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum ex, et volutpat erat. <button class="card-btn">Subscribe</button> Donec vel consequat arcu.</div>
+        </div>
+      <div class="card">
+      <h2 class="card-title">Maru</h2>
+          <img class="card-pic" src="http://placekitten.com/200/200?image=5" alt="cat is held in hand">        
+          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum ex, et volutpat erat. <button class="card-btn">Subscribe</button> Donec vel consequat arcu.</div>
+        </div>
+     <div class="card">
+      <h2 class="card-title">Nyancat</h2>
+          <img class="card-pic" src="http://placekitten.com/200/200?image=6" alt="cat is looking down">        
+          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum ex, et volutpat erat. <button class="card-btn">Subscribe</button> Donec vel consequat arcu.</div>
+        </div>
+     <div class="card">
+     <h2 class="card-title">Grumpy Cat</h2>
+          <img class="card-pic" src="http://placekitten.com/200/200?image=7" alt="cat staring at you">        
+          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum ex, et volutpat erat. <button class="card-btn">Subscribe</button> Donec vel consequat arcu.</div>
+        </div>
+     <div class="card">
+     <h2 class="card-title">Lil Bub</h2>
+          <img class="card-pic" src="http://placekitten.com/200/200?image=8" alt="cat sitting">        
+          <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum ex, et volutpat erat. <button class="card-btn">Subscribe</button> Donec vel consequat arcu.</div>
+        </div>
+     </div>
+     </main>
+      <footer class="footer">
+  <a href="privacy.html" class="footer-link">Privacy Policy</a>
+  <a href="work.html" class="footer-link">Work for Us</a>
+  <a href="contact.html" class="footer-link">Contact Us</a>
+  <a href="social.html" class="footer-link">Social Media</a>
+
+</footer>

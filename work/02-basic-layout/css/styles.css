@@ -1,0 +1,67 @@
+#homepage {
+    display: grid;
+    grid-template-columns: 1fr, 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "local-menu main"
+      "footer footer";
+  }
+  
+  header {
+    grid-area: header;
+    
+    
+    
+  }
+  main {
+    grid-area: main;
+    background-color: pink;
+    padding: 10px;
+  }
+  footer {
+    grid-area: footer;
+    background-color: plum;
+    padding: 20px;
+  }
+  
+  
+  .menubar ul {
+    background-color: plum;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0px;
+  }
+  
+  
+  .local-menu {
+    display: flex;
+    grid-area: local-menu;
+    background-color: pink;
+    border-right: 1px solid black;
+    
+  }
+  
+  .local-menu li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    
+  }
+  .menu > li {
+    padding: 10px;
+  }
+  
+  .menu > li:hover a {
+    color: white;
+  }
+  
+  .menu > li:hover {
+    background-color: rebeccapurple;
+  }
+  
+  .local-menu li:hover {
+    background-color: plum;
+  }

@@ -1,0 +1,196 @@
+/* global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  background-color: papayawhip;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  line-height: 1.2;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  background-color: burlywood;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  display: block;
+/*   width: auto; */
+}
+
+.header-title {
+  font-weight: bold;
+  margin: 0;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-navmenu {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+.menubar {
+  position: relative;
+  width: 5rem;
+}
+.button-menu{
+  diplay: flex;
+}
+.button-menu:hover,
+.button-menu:focus-within {
+  cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 0.5rem;
+    background-color: burlywood;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a:hover {
+  background-color: grey;
+}
+.nav-menu--open {
+  rotate: none;
+}
+.nav-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  border: none;
+}
+
+.nav-item {
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* main */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: papayawhip;
+}
+
+ .card{
+  padding: 1rem;
+  margin: 5px;
+  border: 1px solid black;
+  background-color: #eee;
+  
+  width: 100vw;
+} 
+
+.card-pic__right {
+    float: right;
+    aspect-ratio: 1/1;
+    width: 125px;
+    
+    margin: 0.5rem;
+}
+
+.card-pic__left {
+    float: left;
+    aspect-ratio: 1/1;
+    width: 125px;
+    margin: 0.5rem;
+}
+.card-title {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.footer-link {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus-within {
+  text-decoration: underline;
+  border-bottom: 1px solid blue;
+}
+@media screen and (min-width: 44rem){  
+  .header {
+    justify-content: space-between;
+  }
+  .menubar {
+    width: 100%;
+  }
+  .button-menu {
+    display: none;
+  }
+  /*給h1和nav外面包一層div，以便做分行*/
+  .title-navmenu {
+    display: flex;
+    width: 100vw;
+    flex-direction: column; /*分行*/
+    justify-content: space-between;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+}

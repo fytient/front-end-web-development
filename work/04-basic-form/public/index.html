@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Form</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Basic Form Header</h1>
+  </header>
+  <main class="main">
+    <div class="basic-form">
+      <form action="/submit" method="POST">
+        <label for="name" class="blankspace">
+          <span>Name: </span>
+          <input name="name" type="name" required>
+        </label>
+        <label for="email" class="blankspace">
+          <span>Email: </span>
+          <input name="email" type="email" maxlength="30" required>
+        </label>
+        <label for="form__dropdown" class="blankspace">
+          <span>Tier:</span>
+          <select class="tier" name="tier" required>
+            <option value="">Please select</option>
+            <option value="1">Silver Tier</option>
+            <option value="2">Gold Tier</option>
+            <option value="3">Platinum Tier</option>
+          </select>
+        </label>
+        <label class="blankspace">
+          <span>Do you want us to send you annoying emails?</span>
+          <input class="checkbox" id="checkbox" type="checkbox" name="annoy_me" checked>
+        </label>
+
+        <button type="submit">Register</button>
+
+      </form>
+    </div>
+  </main>
+  <footer>
+    You agree to have read and accepted our terms of use, cookie and privacy policy, see our <a
+      href="websiteprivacy.html">Privacy Policy</a>
+  </footer>
+</body>
+
+</html>

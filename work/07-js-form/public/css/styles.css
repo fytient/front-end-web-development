@@ -1,0 +1,176 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+.header {
+    background-color: #ff7065;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.header-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.registration-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+
+}
+
+/* .form{
+  display: block;
+  margin-bottom: 5px;
+
+} */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 30px;
+    border-radius: 4px;
+
+}
+
+.form input,
+.form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+
+}
+
+
+
+/*   grid-column: 4 / 12; */
+
+
+.form .error {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+    grid-column: 0 / 1;
+}
+
+.form input:invalid+.error {
+    display: block;
+}
+
+.form-checkbox {
+    margin-top: 10px;
+}
+
+.form-checkbox__input {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.form-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form__submit {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: #ff7065;
+}
+
+
+footer {
+    background-color: #ff7065;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 40rem) {
+    .registration-form {
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+
+
+.form__label {
+    grid-column: span 4;
+
+    margin: 8px;
+
+    text-align: right;
+}
+
+
+.form__label--checkbox {
+    grid-column: span 12;
+    justify-self: center;
+    align-items: center;
+}
+
+.form__input {
+    margin: 8px;
+    grid-column: span 8;
+
+    width: 70%;
+}
+
+header,
+footer {
+
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+
+select {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+}

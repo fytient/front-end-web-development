@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Js-form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">JS Form</h1>
+    </header>
+    <main class="main">
+        <div class="registration-form">
+            <form action="/register" method="POST">
+                <div class="form-name">
+
+                    <label for="name"></label>
+                    <span class="form__span">Name:</span>
+                    <input class="form-name__input" name="name" id="name" />
+                    <span class="error" id="name-error">Name is required</span>
+                </div>
+
+                <div class="form-email">
+                    <span class="form-email__error"></span>
+                    <label for="email"></label>
+                    <span class="form__span">Email:</span>
+                    <input class="form-email__input" name="email" id="email" />
+                </div>
+
+                <div class="form-confirm">
+                    <span class="form-confirm__error"></span>
+                    <label for="confirm"></label>
+                    <span class="form__span">Confirm Email:</span>
+                    <input class="form-confirm__input" name="confirm" id="confirm" />
+                </div>
+
+                <div class="form-tier">
+                    <span class="form-tier__error"></span>
+                    <label for="tier"></label>
+                    <span class="form__span">Tier:</span>
+                    <select class="form-tier__select" name="tier">
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </div>
+
+                <div class="form-checkbox">
+                    <label for="annoy_me"></label>
+                    <span class="form__span">Wants-spam?</span>
+                    <input class="form-checkbox__input" type="checkbox" name="annoy_me" checked />
+                </div>
+                <div class="form-button">
+                    <button type="submit" class="form__submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        You agree to have read and accepted our terms of use, cookie and privacy policy, see our <a
+            href="privacy.html">Privacy Policy</a>
+    </footer>
+    </div>
+</body>
+
+</html>

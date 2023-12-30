@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  background-color: aliceblue;
+  font-family: san-serif;
+  display: grid;
+  grid-template-areas: "header""main""footer";
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: beige;
+}
+
+.header-title {
+  /*   grid-area: header; */
+  grid-column: span 12;
+  display: flex;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.basic-form {
+  display: grid;
+  /*   background-color: lightblue; */
+  width: 70%;
+  height: 50%;
+
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+form {
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  /*   display: flex;
+    flex-wrap:wrap ; */
+  width: 100%;
+  height: 100%;
+  /*   justify-content: flex-start; */
+}
+
+.blankspace {
+  grid-column: span 6;
+  margin: 10% 10% 10% 10%;
+
+}
+
+button {
+  grid-column: 6 / 8;
+  height: 1 rem;
+  margin-bottom: 32px;
+}
+
+button:active {
+  background: beige;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: beige;
+  color: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 40rem) {
+  .basic-form {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*         align-items:center; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+
+
+  }
+
+  .blankspace {
+    grid-column: span 12;
+    justify-self: left;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+
+    justify-self: center;
+    width: 100%;
+
+
+
+  }
+}
